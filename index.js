@@ -12,6 +12,7 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+var portNumber = 3003;
+http.listen(portNumber, function(){
+  console.log('listening on localhost:'+portNumber);
 });
